@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ClientApplication.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ClientApplication_UserService_UserService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:54045/UserService.asmx</Value>
+    </Setting>
+    <Setting Name="ClientApplication_AdminService_AdminService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:54236/AdminService.asmx</Value>
+    </Setting>
+    <Setting Name="ClientApplication_AdminService1_AdminService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:54236/AdminService.asmx</Value>
+    </Setting>
+    <Setting Name="ClientApplication_UserServiceBackup_UserServiceBackup" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:1971/UserServiceBackup.asmx</Value>
+    </Setting>
+    <Setting Name="ClientApplication_AdminServiceBackup_AdminServiceBackup" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:2309/AdminServiceBackup.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

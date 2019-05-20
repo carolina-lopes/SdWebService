@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AC9F01D3-5424-4DBC-9148-B9FECEAE912F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ClientApplication</RootNamespace>
+    <AssemblyName>ClientApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminArea\AdminAddUcForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminArea\AdminAddUcForm.Designer.cs">
+      <DependentUpon>AdminAddUcForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminArea\AdminAreaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminArea\AdminAreaForm.Designer.cs">
+      <DependentUpon>AdminAreaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminArea\AdminVerAlunosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminArea\AdminVerAlunosForm.Designer.cs">
+      <DependentUpon>AdminVerAlunosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminArea\AdminVerUcAlunoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminArea\AdminVerUcAlunoForm.Designer.cs">
+      <DependentUpon>AdminVerUcAlunoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminArea\AdminVerUcForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminArea\AdminVerUcForm.Designer.cs">
+      <DependentUpon>AdminVerUcForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminArea\AdminAddAlunosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminArea\AdminAddAlunosForm.Designer.cs">
+      <DependentUpon>AdminAddAlunosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Auth\db\Administrator.cs">
+      <DependentUpon>AuthDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Auth\db\AuthDbModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AuthDbModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Auth\db\AuthDbModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AuthDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Auth\db\AuthDbModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AuthDbModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Auth\LoginAdminPageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auth\LoginAdminPageForm.Designer.cs">
+      <DependentUpon>LoginAdminPageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Auth\LoginUserPageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auth\LoginUserPageForm.Designer.cs">
+      <DependentUpon>LoginUserPageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Auth\db\User.cs">
+      <DependentUpon>AuthDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Main\MainPageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\MainPageForm.Designer.cs">
+      <DependentUpon>MainPageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Auth\RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auth\RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserArea\UserAreaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserArea\UserAreaForm.Designer.cs">
+      <DependentUpon>UserAreaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\AdminService1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\AdminServiceBackup\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\UserServiceBackup\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\UserService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminArea\AdminAddAlunosForm.resx">
+      <DependentUpon>AdminAddAlunosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminArea\AdminAddUcForm.resx">
+      <DependentUpon>AdminAddUcForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminArea\AdminAreaForm.resx">
+      <DependentUpon>AdminAreaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminArea\AdminVerAlunosForm.resx">
+      <DependentUpon>AdminVerAlunosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminArea\AdminVerUcAlunoForm.resx">
+      <DependentUpon>AdminVerUcAlunoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminArea\AdminVerUcForm.resx">
+      <DependentUpon>AdminVerUcForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Auth\LoginAdminPageForm.resx">
+      <DependentUpon>LoginAdminPageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Auth\LoginUserPageForm.resx">
+      <DependentUpon>LoginUserPageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\MainPageForm.resx">
+      <DependentUpon>MainPageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Auth\RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserArea\UserAreaForm.resx">
+      <DependentUpon>UserAreaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Auth\db\AuthDbModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AuthDbModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Auth\db\AuthDbModel.edmx.diagram">
+      <DependentUpon>AuthDbModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Web References\AdminService1\AdminService.wsdl" />
+    <None Include="Web References\AdminService1\Cadeira.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\AdminService1\Main.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\AdminService1\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\AdminServiceBackup\AdminServiceBackup.wsdl" />
+    <None Include="Web References\AdminServiceBackup\Cadeira.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\AdminServiceBackup\Main.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\AdminServiceBackup\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\UserServiceBackup\Cadeira.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UserServiceBackup\Cadeiras.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UserServiceBackup\Main.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UserServiceBackup\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\UserServiceBackup\UserServiceBackup.wsdl" />
+    <None Include="Web References\UserService\Cadeira.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UserService\Main.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\UserService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\UserService\UserService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Auth\db\AuthDbModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AuthDbModel.edmx</DependentUpon>
+      <LastGenOutput>AuthDbModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Auth\db\AuthDbModel.edmx.sql" />
+    <Content Include="Auth\db\AuthDbModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AuthDbModel.edmx</DependentUpon>
+      <LastGenOutput>AuthDbModel.cs</LastGenOutput>
+    </Content>
+    <None Include="Web References\AdminServiceBackup\AdminServiceBackup.disco" />
+    <None Include="Web References\UserServiceBackup\UserServiceBackup.disco" />
+    <None Include="Web References\AdminService1\AdminService.disco" />
+    <None Include="Web References\UserService\UserService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:1971/UserServiceBackup.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\UserServiceBackup\</RelPath>
+      <UpdateFromURL>http://localhost:1971/UserServiceBackup.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ClientApplication_UserServiceBackup_UserServiceBackup</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:2309/AdminServiceBackup.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\AdminServiceBackup\</RelPath>
+      <UpdateFromURL>http://localhost:2309/AdminServiceBackup.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ClientApplication_AdminServiceBackup_AdminServiceBackup</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:54045/UserService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\UserService\</RelPath>
+      <UpdateFromURL>http://localhost:54045/UserService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ClientApplication_UserService_UserService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:54236/AdminService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\AdminService1\</RelPath>
+      <UpdateFromURL>http://localhost:54236/AdminService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ClientApplication_AdminService1_AdminService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

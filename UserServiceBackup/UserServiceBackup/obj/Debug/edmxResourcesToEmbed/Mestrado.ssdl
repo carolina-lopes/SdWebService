@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MestradoDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Cadeiras">
+    <Key>
+      <PropertyRef Name="CodCadeira" />
+    </Key>
+    <Property Name="CodCadeira" Type="int" Nullable="false" />
+    <Property Name="NumeroAluno" Type="int" Nullable="false" />
+    <Property Name="NomeCadeira" Type="nchar" MaxLength="30" Nullable="false" />
+    <Property Name="NotaFinal" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Main">
+    <Key>
+      <PropertyRef Name="NumeroAluno" />
+    </Key>
+    <Property Name="NumeroAluno" Type="int" Nullable="false" />
+    <Property Name="Nome" Type="nchar" MaxLength="80" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="MestradoDBModelStoreContainer">
+    <EntitySet Name="Cadeiras" EntityType="Self.Cadeiras" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Main" EntityType="Self.Main" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

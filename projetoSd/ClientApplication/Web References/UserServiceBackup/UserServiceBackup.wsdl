@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="getCadeiras">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="num" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCadeirasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getCadeirasResult" type="tns:ArrayOfCadeira" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCadeira">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Cadeira" nillable="true" type="tns:Cadeira" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Cadeira">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CodCadeira" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NumeroAluno" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NomeCadeira" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NotaFinal" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nome" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getUserResult" type="tns:Main" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Main">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="NumeroAluno" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nome" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getCadeirasM">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="num" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCadeirasMResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getCadeirasMResult" type="tns:ArrayOfCadeiras" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCadeiras">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Cadeiras" nillable="true" type="tns:Cadeiras" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Cadeiras">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CodCadeira" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NumeroAluno" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NomeCadeira" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NotaFinal" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getUserM">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nome" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUserMResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getUserMResult" type="tns:Main" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCadeirasD">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="num" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCadeirasDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getCadeirasDResult" type="tns:ArrayOfCadeira" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUserD">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nome" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getUserDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getUserDResult" type="tns:Main" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getCadeirasSoapIn">
+    <wsdl:part name="parameters" element="tns:getCadeiras" />
+  </wsdl:message>
+  <wsdl:message name="getCadeirasSoapOut">
+    <wsdl:part name="parameters" element="tns:getCadeirasResponse" />
+  </wsdl:message>
+  <wsdl:message name="getUserSoapIn">
+    <wsdl:part name="parameters" element="tns:getUser" />
+  </wsdl:message>
+  <wsdl:message name="getUserSoapOut">
+    <wsdl:part name="parameters" element="tns:getUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCadeirasMSoapIn">
+    <wsdl:part name="parameters" element="tns:getCadeirasM" />
+  </wsdl:message>
+  <wsdl:message name="getCadeirasMSoapOut">
+    <wsdl:part name="parameters" element="tns:getCadeirasMResponse" />
+  </wsdl:message>
+  <wsdl:message name="getUserMSoapIn">
+    <wsdl:part name="parameters" element="tns:getUserM" />
+  </wsdl:message>
+  <wsdl:message name="getUserMSoapOut">
+    <wsdl:part name="parameters" element="tns:getUserMResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCadeirasDSoapIn">
+    <wsdl:part name="parameters" element="tns:getCadeirasD" />
+  </wsdl:message>
+  <wsdl:message name="getCadeirasDSoapOut">
+    <wsdl:part name="parameters" element="tns:getCadeirasDResponse" />
+  </wsdl:message>
+  <wsdl:message name="getUserDSoapIn">
+    <wsdl:part name="parameters" element="tns:getUserD" />
+  </wsdl:message>
+  <wsdl:message name="getUserDSoapOut">
+    <wsdl:part name="parameters" element="tns:getUserDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="UserServiceBackupSoap">
+    <wsdl:operation name="getCadeiras">
+      <wsdl:input message="tns:getCadeirasSoapIn" />
+      <wsdl:output message="tns:getCadeirasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getUser">
+      <wsdl:input message="tns:getUserSoapIn" />
+      <wsdl:output message="tns:getUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getCadeirasM">
+      <wsdl:input message="tns:getCadeirasMSoapIn" />
+      <wsdl:output message="tns:getCadeirasMSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserM">
+      <wsdl:input message="tns:getUserMSoapIn" />
+      <wsdl:output message="tns:getUserMSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getCadeirasD">
+      <wsdl:input message="tns:getCadeirasDSoapIn" />
+      <wsdl:output message="tns:getCadeirasDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserD">
+      <wsdl:input message="tns:getUserDSoapIn" />
+      <wsdl:output message="tns:getUserDSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="UserServiceBackupSoap" type="tns:UserServiceBackupSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getCadeiras">
+      <soap:operation soapAction="http://tempuri.org/getCadeiras" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUser">
+      <soap:operation soapAction="http://tempuri.org/getUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCadeirasM">
+      <soap:operation soapAction="http://tempuri.org/getCadeirasM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserM">
+      <soap:operation soapAction="http://tempuri.org/getUserM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCadeirasD">
+      <soap:operation soapAction="http://tempuri.org/getCadeirasD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserD">
+      <soap:operation soapAction="http://tempuri.org/getUserD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="UserServiceBackupSoap12" type="tns:UserServiceBackupSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getCadeiras">
+      <soap12:operation soapAction="http://tempuri.org/getCadeiras" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUser">
+      <soap12:operation soapAction="http://tempuri.org/getUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCadeirasM">
+      <soap12:operation soapAction="http://tempuri.org/getCadeirasM" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserM">
+      <soap12:operation soapAction="http://tempuri.org/getUserM" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCadeirasD">
+      <soap12:operation soapAction="http://tempuri.org/getCadeirasD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserD">
+      <soap12:operation soapAction="http://tempuri.org/getUserD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UserServiceBackup">
+    <wsdl:port name="UserServiceBackupSoap" binding="tns:UserServiceBackupSoap">
+      <soap:address location="http://localhost:1971/UserServiceBackup.asmx" />
+    </wsdl:port>
+    <wsdl:port name="UserServiceBackupSoap12" binding="tns:UserServiceBackupSoap12">
+      <soap12:address location="http://localhost:1971/UserServiceBackup.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

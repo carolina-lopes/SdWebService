@@ -1,0 +1,61 @@
+E:\projetoSd\ClientApplication\bin\Debug\ClientApplication.exe.config
+E:\projetoSd\ClientApplication\bin\Debug\ClientApplication.exe
+E:\projetoSd\ClientApplication\bin\Debug\ClientApplication.pdb
+E:\projetoSd\ClientApplication\obj\Debug\ClientApplication.csprojAssemblyReference.cache
+E:\projetoSd\ClientApplication\obj\Debug\ClientApplication.Properties.Resources.resources
+E:\projetoSd\ClientApplication\obj\Debug\ClientApplication.csproj.GenerateResource.cache
+E:\projetoSd\ClientApplication\obj\Debug\ClientApplication.csproj.CoreCompileInputs.cache
+E:\projetoSd\ClientApplication\obj\Debug\ClientApplication.exe
+E:\projetoSd\ClientApplication\obj\Debug\ClientApplication.pdb
+E:\projetoSd\ClientApplication\bin\Debug\EntityFramework.dll
+E:\projetoSd\ClientApplication\bin\Debug\EntityFramework.SqlServer.dll
+E:\projetoSd\ClientApplication\bin\Debug\EntityFramework.xml
+E:\projetoSd\ClientApplication\bin\Debug\EntityFramework.SqlServer.xml
+E:\projetoSd\ClientApplication\obj\Debug\ClientApplication.csproj.CopyComplete
+E:\projetoSd\ClientApplication\obj\Debug\ClientApplication.LoginAdminPageForm.resources
+E:\projetoSd\ClientApplication\obj\Debug\ClientApplication.MainPageForm.resources
+E:\projetoSd\ClientApplication\obj\Debug\ClientApplication.RegisterForm.resources
+E:\projetoSd\ClientApplication\obj\Debug\ClientApplication.LoginUserPageForm.resources
+C:\Users\carol\Desktop\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.csprojAssemblyReference.cache
+C:\Users\carol\Desktop\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.exe
+C:\Users\carol\Desktop\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.pdb
+C:\Users\carol\Desktop\Projeto2\projetoSd\ClientApplication\bin\Debug\ClientApplication.exe.config
+C:\Users\carol\Desktop\Projeto2\projetoSd\ClientApplication\bin\Debug\ClientApplication.exe
+C:\Users\carol\Desktop\Projeto2\projetoSd\ClientApplication\bin\Debug\ClientApplication.pdb
+C:\Users\carol\Desktop\Projeto2\projetoSd\ClientApplication\bin\Debug\EntityFramework.dll
+C:\Users\carol\Desktop\Projeto2\projetoSd\ClientApplication\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\carol\Desktop\Projeto2\projetoSd\ClientApplication\bin\Debug\EntityFramework.xml
+C:\Users\carol\Desktop\Projeto2\projetoSd\ClientApplication\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\carol\Desktop\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.LoginAdminPageForm.resources
+C:\Users\carol\Desktop\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.LoginUserPageForm.resources
+C:\Users\carol\Desktop\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.MainPageForm.resources
+C:\Users\carol\Desktop\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.Properties.Resources.resources
+C:\Users\carol\Desktop\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.RegisterForm.resources
+C:\Users\carol\Desktop\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.csproj.GenerateResource.cache
+C:\Users\carol\Desktop\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.csproj.CoreCompileInputs.cache
+C:\Users\carol\Desktop\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.csproj.CopyComplete
+C:\Users\carol\Dropbox\UBI\Terceiro Ano\Sistemas Distribuidos\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.AdminArea.AdminAddAlunosForm.resources
+C:\Users\carol\Dropbox\UBI\Terceiro Ano\Sistemas Distribuidos\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.AdminArea.AdminAddUcForm.resources
+C:\Users\carol\Dropbox\UBI\Terceiro Ano\Sistemas Distribuidos\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.AdminArea.AdminAreaForm.resources
+C:\Users\carol\Dropbox\UBI\Terceiro Ano\Sistemas Distribuidos\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.AdminArea.AdminVerAlunosForm.resources
+C:\Users\carol\Dropbox\UBI\Terceiro Ano\Sistemas Distribuidos\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.AdminArea.AdminVerUcForm.resources
+C:\Users\carol\Dropbox\UBI\Terceiro Ano\Sistemas Distribuidos\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.LoginAdminPageForm.resources
+C:\Users\carol\Dropbox\UBI\Terceiro Ano\Sistemas Distribuidos\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.LoginUserPageForm.resources
+C:\Users\carol\Dropbox\UBI\Terceiro Ano\Sistemas Distribuidos\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.MainPageForm.resources
+C:\Users\carol\Dropbox\UBI\Terceiro Ano\Sistemas Distribuidos\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.Properties.Resources.resources
+C:\Users\carol\Dropbox\UBI\Terceiro Ano\Sistemas Distribuidos\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.RegisterForm.resources
+C:\Users\carol\Dropbox\UBI\Terceiro Ano\Sistemas Distribuidos\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.UserAreaForm.resources
+C:\Users\carol\Dropbox\UBI\Terceiro Ano\Sistemas Distribuidos\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.csproj.GenerateResource.cache
+C:\Users\carol\Dropbox\UBI\Terceiro Ano\Sistemas Distribuidos\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.csproj.CoreCompileInputs.cache
+C:\Users\carol\Dropbox\UBI\Terceiro Ano\Sistemas Distribuidos\Projeto2\projetoSd\ClientApplication\bin\Debug\ClientApplication.exe.config
+C:\Users\carol\Dropbox\UBI\Terceiro Ano\Sistemas Distribuidos\Projeto2\projetoSd\ClientApplication\bin\Debug\ClientApplication.exe
+C:\Users\carol\Dropbox\UBI\Terceiro Ano\Sistemas Distribuidos\Projeto2\projetoSd\ClientApplication\bin\Debug\ClientApplication.pdb
+C:\Users\carol\Dropbox\UBI\Terceiro Ano\Sistemas Distribuidos\Projeto2\projetoSd\ClientApplication\bin\Debug\EntityFramework.dll
+C:\Users\carol\Dropbox\UBI\Terceiro Ano\Sistemas Distribuidos\Projeto2\projetoSd\ClientApplication\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\carol\Dropbox\UBI\Terceiro Ano\Sistemas Distribuidos\Projeto2\projetoSd\ClientApplication\bin\Debug\EntityFramework.xml
+C:\Users\carol\Dropbox\UBI\Terceiro Ano\Sistemas Distribuidos\Projeto2\projetoSd\ClientApplication\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\carol\Dropbox\UBI\Terceiro Ano\Sistemas Distribuidos\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.csproj.CopyComplete
+C:\Users\carol\Dropbox\UBI\Terceiro Ano\Sistemas Distribuidos\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.exe
+C:\Users\carol\Dropbox\UBI\Terceiro Ano\Sistemas Distribuidos\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.pdb
+C:\Users\carol\Dropbox\UBI\Terceiro Ano\Sistemas Distribuidos\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.csprojAssemblyReference.cache
+C:\Users\carol\Dropbox\UBI\Terceiro Ano\Sistemas Distribuidos\Projeto2\projetoSd\ClientApplication\obj\Debug\ClientApplication.AdminArea.AdminVerUcAlunoForm.resources

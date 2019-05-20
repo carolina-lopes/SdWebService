@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="getAlunosL">
+        <s:complexType />
+      </s:element>
+      <s:element name="getAlunosLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getAlunosLResult" type="tns:ArrayOfMain" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfMain">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Main" nillable="true" type="tns:Main" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Main">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="NumeroAluno" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nome" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getCadeirasL">
+        <s:complexType />
+      </s:element>
+      <s:element name="getCadeirasLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getCadeirasLResult" type="tns:ArrayOfCadeira" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCadeira">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Cadeira" nillable="true" type="tns:Cadeira" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Cadeira">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CodCadeira" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="NumeroAluno" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NomeCadeira" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NotaFinal" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getCadeirasAlunoL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="numero" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCadeirasAlunoLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getCadeirasAlunoLResult" type="tns:ArrayOfCadeira" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="addAlunoL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nome" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="numero" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="addAlunoLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="addAlunoLResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="addCadeiraL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nomeCadeira" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="numero" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="notaFinal" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="numCadeira" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="addCadeiraLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="addCadeiraLResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAlunosM">
+        <s:complexType />
+      </s:element>
+      <s:element name="getAlunosMResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getAlunosMResult" type="tns:ArrayOfMain" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCadeirasM">
+        <s:complexType />
+      </s:element>
+      <s:element name="getCadeirasMResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getCadeirasMResult" type="tns:ArrayOfCadeira" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCadeirasAlunoM">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="numero" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCadeirasAlunoMResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getCadeirasAlunoMResult" type="tns:ArrayOfCadeira" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="addAlunoM">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nome" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="numero" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="addAlunoMResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="addAlunoMResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="addCadeiraM">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nomeCadeira" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="numero" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="notaFinal" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="numCadeira" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="addCadeiraMResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="addCadeiraMResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAlunosD">
+        <s:complexType />
+      </s:element>
+      <s:element name="getAlunosDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getAlunosDResult" type="tns:ArrayOfMain" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCadeirasD">
+        <s:complexType />
+      </s:element>
+      <s:element name="getCadeirasDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getCadeirasDResult" type="tns:ArrayOfCadeira" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCadeirasAlunoD">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="numero" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCadeirasAlunoDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getCadeirasAlunoDResult" type="tns:ArrayOfCadeira" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="addAlunoD">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nome" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="numero" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="addAlunoDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="addAlunoDResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="addCadeiraD">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nomeCadeira" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="numero" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="notaFinal" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="numCadeira" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="addCadeiraDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="addCadeiraDResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getAlunosLSoapIn">
+    <wsdl:part name="parameters" element="tns:getAlunosL" />
+  </wsdl:message>
+  <wsdl:message name="getAlunosLSoapOut">
+    <wsdl:part name="parameters" element="tns:getAlunosLResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCadeirasLSoapIn">
+    <wsdl:part name="parameters" element="tns:getCadeirasL" />
+  </wsdl:message>
+  <wsdl:message name="getCadeirasLSoapOut">
+    <wsdl:part name="parameters" element="tns:getCadeirasLResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCadeirasAlunoLSoapIn">
+    <wsdl:part name="parameters" element="tns:getCadeirasAlunoL" />
+  </wsdl:message>
+  <wsdl:message name="getCadeirasAlunoLSoapOut">
+    <wsdl:part name="parameters" element="tns:getCadeirasAlunoLResponse" />
+  </wsdl:message>
+  <wsdl:message name="addAlunoLSoapIn">
+    <wsdl:part name="parameters" element="tns:addAlunoL" />
+  </wsdl:message>
+  <wsdl:message name="addAlunoLSoapOut">
+    <wsdl:part name="parameters" element="tns:addAlunoLResponse" />
+  </wsdl:message>
+  <wsdl:message name="addCadeiraLSoapIn">
+    <wsdl:part name="parameters" element="tns:addCadeiraL" />
+  </wsdl:message>
+  <wsdl:message name="addCadeiraLSoapOut">
+    <wsdl:part name="parameters" element="tns:addCadeiraLResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAlunosMSoapIn">
+    <wsdl:part name="parameters" element="tns:getAlunosM" />
+  </wsdl:message>
+  <wsdl:message name="getAlunosMSoapOut">
+    <wsdl:part name="parameters" element="tns:getAlunosMResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCadeirasMSoapIn">
+    <wsdl:part name="parameters" element="tns:getCadeirasM" />
+  </wsdl:message>
+  <wsdl:message name="getCadeirasMSoapOut">
+    <wsdl:part name="parameters" element="tns:getCadeirasMResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCadeirasAlunoMSoapIn">
+    <wsdl:part name="parameters" element="tns:getCadeirasAlunoM" />
+  </wsdl:message>
+  <wsdl:message name="getCadeirasAlunoMSoapOut">
+    <wsdl:part name="parameters" element="tns:getCadeirasAlunoMResponse" />
+  </wsdl:message>
+  <wsdl:message name="addAlunoMSoapIn">
+    <wsdl:part name="parameters" element="tns:addAlunoM" />
+  </wsdl:message>
+  <wsdl:message name="addAlunoMSoapOut">
+    <wsdl:part name="parameters" element="tns:addAlunoMResponse" />
+  </wsdl:message>
+  <wsdl:message name="addCadeiraMSoapIn">
+    <wsdl:part name="parameters" element="tns:addCadeiraM" />
+  </wsdl:message>
+  <wsdl:message name="addCadeiraMSoapOut">
+    <wsdl:part name="parameters" element="tns:addCadeiraMResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAlunosDSoapIn">
+    <wsdl:part name="parameters" element="tns:getAlunosD" />
+  </wsdl:message>
+  <wsdl:message name="getAlunosDSoapOut">
+    <wsdl:part name="parameters" element="tns:getAlunosDResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCadeirasDSoapIn">
+    <wsdl:part name="parameters" element="tns:getCadeirasD" />
+  </wsdl:message>
+  <wsdl:message name="getCadeirasDSoapOut">
+    <wsdl:part name="parameters" element="tns:getCadeirasDResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCadeirasAlunoDSoapIn">
+    <wsdl:part name="parameters" element="tns:getCadeirasAlunoD" />
+  </wsdl:message>
+  <wsdl:message name="getCadeirasAlunoDSoapOut">
+    <wsdl:part name="parameters" element="tns:getCadeirasAlunoDResponse" />
+  </wsdl:message>
+  <wsdl:message name="addAlunoDSoapIn">
+    <wsdl:part name="parameters" element="tns:addAlunoD" />
+  </wsdl:message>
+  <wsdl:message name="addAlunoDSoapOut">
+    <wsdl:part name="parameters" element="tns:addAlunoDResponse" />
+  </wsdl:message>
+  <wsdl:message name="addCadeiraDSoapIn">
+    <wsdl:part name="parameters" element="tns:addCadeiraD" />
+  </wsdl:message>
+  <wsdl:message name="addCadeiraDSoapOut">
+    <wsdl:part name="parameters" element="tns:addCadeiraDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AdminServiceBackupSoap">
+    <wsdl:operation name="getAlunosL">
+      <wsdl:input message="tns:getAlunosLSoapIn" />
+      <wsdl:output message="tns:getAlunosLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getCadeirasL">
+      <wsdl:input message="tns:getCadeirasLSoapIn" />
+      <wsdl:output message="tns:getCadeirasLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getCadeirasAlunoL">
+      <wsdl:input message="tns:getCadeirasAlunoLSoapIn" />
+      <wsdl:output message="tns:getCadeirasAlunoLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="addAlunoL">
+      <wsdl:input message="tns:addAlunoLSoapIn" />
+      <wsdl:output message="tns:addAlunoLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="addCadeiraL">
+      <wsdl:input message="tns:addCadeiraLSoapIn" />
+      <wsdl:output message="tns:addCadeiraLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAlunosM">
+      <wsdl:input message="tns:getAlunosMSoapIn" />
+      <wsdl:output message="tns:getAlunosMSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getCadeirasM">
+      <wsdl:input message="tns:getCadeirasMSoapIn" />
+      <wsdl:output message="tns:getCadeirasMSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getCadeirasAlunoM">
+      <wsdl:input message="tns:getCadeirasAlunoMSoapIn" />
+      <wsdl:output message="tns:getCadeirasAlunoMSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="addAlunoM">
+      <wsdl:input message="tns:addAlunoMSoapIn" />
+      <wsdl:output message="tns:addAlunoMSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="addCadeiraM">
+      <wsdl:input message="tns:addCadeiraMSoapIn" />
+      <wsdl:output message="tns:addCadeiraMSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAlunosD">
+      <wsdl:input message="tns:getAlunosDSoapIn" />
+      <wsdl:output message="tns:getAlunosDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getCadeirasD">
+      <wsdl:input message="tns:getCadeirasDSoapIn" />
+      <wsdl:output message="tns:getCadeirasDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getCadeirasAlunoD">
+      <wsdl:input message="tns:getCadeirasAlunoDSoapIn" />
+      <wsdl:output message="tns:getCadeirasAlunoDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="addAlunoD">
+      <wsdl:input message="tns:addAlunoDSoapIn" />
+      <wsdl:output message="tns:addAlunoDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="addCadeiraD">
+      <wsdl:input message="tns:addCadeiraDSoapIn" />
+      <wsdl:output message="tns:addCadeiraDSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AdminServiceBackupSoap" type="tns:AdminServiceBackupSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getAlunosL">
+      <soap:operation soapAction="http://tempuri.org/getAlunosL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCadeirasL">
+      <soap:operation soapAction="http://tempuri.org/getCadeirasL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCadeirasAlunoL">
+      <soap:operation soapAction="http://tempuri.org/getCadeirasAlunoL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addAlunoL">
+      <soap:operation soapAction="http://tempuri.org/addAlunoL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addCadeiraL">
+      <soap:operation soapAction="http://tempuri.org/addCadeiraL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAlunosM">
+      <soap:operation soapAction="http://tempuri.org/getAlunosM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCadeirasM">
+      <soap:operation soapAction="http://tempuri.org/getCadeirasM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCadeirasAlunoM">
+      <soap:operation soapAction="http://tempuri.org/getCadeirasAlunoM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addAlunoM">
+      <soap:operation soapAction="http://tempuri.org/addAlunoM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addCadeiraM">
+      <soap:operation soapAction="http://tempuri.org/addCadeiraM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAlunosD">
+      <soap:operation soapAction="http://tempuri.org/getAlunosD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCadeirasD">
+      <soap:operation soapAction="http://tempuri.org/getCadeirasD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCadeirasAlunoD">
+      <soap:operation soapAction="http://tempuri.org/getCadeirasAlunoD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addAlunoD">
+      <soap:operation soapAction="http://tempuri.org/addAlunoD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addCadeiraD">
+      <soap:operation soapAction="http://tempuri.org/addCadeiraD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AdminServiceBackupSoap12" type="tns:AdminServiceBackupSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getAlunosL">
+      <soap12:operation soapAction="http://tempuri.org/getAlunosL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCadeirasL">
+      <soap12:operation soapAction="http://tempuri.org/getCadeirasL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCadeirasAlunoL">
+      <soap12:operation soapAction="http://tempuri.org/getCadeirasAlunoL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addAlunoL">
+      <soap12:operation soapAction="http://tempuri.org/addAlunoL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addCadeiraL">
+      <soap12:operation soapAction="http://tempuri.org/addCadeiraL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAlunosM">
+      <soap12:operation soapAction="http://tempuri.org/getAlunosM" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCadeirasM">
+      <soap12:operation soapAction="http://tempuri.org/getCadeirasM" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCadeirasAlunoM">
+      <soap12:operation soapAction="http://tempuri.org/getCadeirasAlunoM" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addAlunoM">
+      <soap12:operation soapAction="http://tempuri.org/addAlunoM" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addCadeiraM">
+      <soap12:operation soapAction="http://tempuri.org/addCadeiraM" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAlunosD">
+      <soap12:operation soapAction="http://tempuri.org/getAlunosD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCadeirasD">
+      <soap12:operation soapAction="http://tempuri.org/getCadeirasD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCadeirasAlunoD">
+      <soap12:operation soapAction="http://tempuri.org/getCadeirasAlunoD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addAlunoD">
+      <soap12:operation soapAction="http://tempuri.org/addAlunoD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addCadeiraD">
+      <soap12:operation soapAction="http://tempuri.org/addCadeiraD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AdminServiceBackup">
+    <wsdl:port name="AdminServiceBackupSoap" binding="tns:AdminServiceBackupSoap">
+      <soap:address location="http://localhost:2309/AdminServiceBackup.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AdminServiceBackupSoap12" binding="tns:AdminServiceBackupSoap12">
+      <soap12:address location="http://localhost:2309/AdminServiceBackup.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

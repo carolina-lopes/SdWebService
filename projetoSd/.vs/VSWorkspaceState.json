@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ClientApplication",
+    "\\ClientApplication\\AdminArea",
+    "\\ClientApplication\\Auth",
+    "\\ClientApplication\\images",
+    "\\ClientApplication\\Main",
+    "\\ClientApplication\\UserArea"
+  ],
+  "SelectedNode": "\\ClientApplication\\UserArea\\UserAreaForm.cs",
+  "PreviewInSolutionExplorer": false
+}

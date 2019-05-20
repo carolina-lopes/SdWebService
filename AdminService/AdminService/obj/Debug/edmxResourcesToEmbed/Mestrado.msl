@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MestradoDBModelStoreContainer" CdmEntityContainer="MestradoDBEntities1">
+    <EntitySetMapping Name="Cadeiras">
+      <EntityTypeMapping TypeName="MestradoDBModel.Cadeira">
+        <MappingFragment StoreEntitySet="Cadeiras">
+          <ScalarProperty Name="CodCadeira" ColumnName="CodCadeira" />
+          <ScalarProperty Name="NumeroAluno" ColumnName="NumeroAluno" />
+          <ScalarProperty Name="NomeCadeira" ColumnName="NomeCadeira" />
+          <ScalarProperty Name="NotaFinal" ColumnName="NotaFinal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mains">
+      <EntityTypeMapping TypeName="MestradoDBModel.Main">
+        <MappingFragment StoreEntitySet="Main">
+          <ScalarProperty Name="NumeroAluno" ColumnName="NumeroAluno" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
