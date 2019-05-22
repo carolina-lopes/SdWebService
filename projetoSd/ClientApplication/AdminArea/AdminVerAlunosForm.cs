@@ -36,7 +36,10 @@ namespace ClientApplication.AdminArea
 
                     foreach (var aluno in alunos)
                     {
-                        textBoxAlunos.AppendText(aluno.Nome);
+
+
+                        string[] nomtemp = aluno.Nome.Split(' ', '\r', '\n');
+                        textBoxAlunos.AppendText(ClientApplication.Security.Decrypt(nomtemp[0]));
                         textBoxAlunos.AppendText("\t");
                         textBoxAlunos.AppendText(aluno.NumeroAluno.ToString());
                         textBoxAlunos.AppendText(Environment.NewLine);
@@ -49,7 +52,8 @@ namespace ClientApplication.AdminArea
 
                     foreach (var aluno in alunos)
                     {
-                        textBoxAlunos.AppendText(aluno.Nome);
+                        string[] nomtemp = aluno.Nome.Split(' ', '\r', '\n');
+                        textBoxAlunos.AppendText(ClientApplication.Security.Decrypt(nomtemp[0]));
                         textBoxAlunos.AppendText("\t");
                         textBoxAlunos.AppendText(aluno.NumeroAluno.ToString());
                         textBoxAlunos.AppendText(Environment.NewLine);
@@ -62,7 +66,8 @@ namespace ClientApplication.AdminArea
 
                     foreach (var aluno in alunos)
                     {
-                        textBoxAlunos.AppendText(aluno.Nome);
+                        string[] nomtemp = aluno.Nome.Split(' ', '\r', '\n');
+                        textBoxAlunos.AppendText(ClientApplication.Security.Decrypt(nomtemp[0]));
                         textBoxAlunos.AppendText("\t");
                         textBoxAlunos.AppendText(aluno.NumeroAluno.ToString());
                         textBoxAlunos.AppendText(Environment.NewLine);
@@ -81,7 +86,8 @@ namespace ClientApplication.AdminArea
 
                     foreach (var aluno in alunos)
                     {
-                        textBoxAlunos.AppendText(aluno.Nome);
+                        string[] nomtemp = aluno.Nome.Split(' ', '\r', '\n');
+                        textBoxAlunos.AppendText(ClientApplication.Security.Decrypt(nomtemp[0]));
                         textBoxAlunos.AppendText("\t");
                         textBoxAlunos.AppendText(aluno.NumeroAluno.ToString());
                         textBoxAlunos.AppendText(Environment.NewLine);
@@ -94,7 +100,8 @@ namespace ClientApplication.AdminArea
 
                     foreach (var aluno in alunos)
                     {
-                        textBoxAlunos.AppendText(aluno.Nome);
+                        string[] nomtemp = aluno.Nome.Split(' ', '\r', '\n');
+                        textBoxAlunos.AppendText(ClientApplication.Security.Decrypt(nomtemp[0]));
                         textBoxAlunos.AppendText("\t");
                         textBoxAlunos.AppendText(aluno.NumeroAluno.ToString());
                         textBoxAlunos.AppendText(Environment.NewLine);
@@ -107,7 +114,8 @@ namespace ClientApplication.AdminArea
 
                     foreach (var aluno in alunos)
                     {
-                        textBoxAlunos.AppendText(aluno.Nome);
+                        string[] nomtemp = aluno.Nome.Split(' ', '\r', '\n');
+                        textBoxAlunos.AppendText(ClientApplication.Security.Decrypt(nomtemp[0]));
                         textBoxAlunos.AppendText("\t");
                         textBoxAlunos.AppendText(aluno.NumeroAluno.ToString());
                         textBoxAlunos.AppendText(Environment.NewLine);

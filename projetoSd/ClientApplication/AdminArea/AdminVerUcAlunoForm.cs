@@ -37,6 +37,7 @@ namespace ClientApplication.AdminArea
                     foreach (var cadeira in cadeiras)
                     {
                         textBoxUc.AppendText(cadeira.NomeCadeira + " " + cadeira.NotaFinal);
+                        textBoxUc.AppendText(Environment.NewLine);
                     }
                 }
 
@@ -47,6 +48,7 @@ namespace ClientApplication.AdminArea
                     foreach (var cadeira in cadeiras)
                     {
                         textBoxUc.AppendText(cadeira.NomeCadeira + " " + cadeira.NotaFinal);
+                        textBoxUc.AppendText(Environment.NewLine);
                     }
                 }
 

@@ -25,6 +25,7 @@ namespace ClientApplication.AdminArea
             String nome = textBoxNome.Text;
             int num = Int32.Parse(textBoxNum.Text);
             String selected = cb_grau.Text;
+            nome = ClientApplication.Security.Encrypt(nome);
             try
             {
                 AdminService1.AdminService admin = new AdminService1.AdminService();
