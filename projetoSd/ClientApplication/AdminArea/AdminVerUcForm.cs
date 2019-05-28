@@ -42,8 +42,8 @@ namespace ClientApplication.AdminArea
 
                     foreach (var cadeira in cadeiras)
                     {
-
-                        textBoxUc.AppendText(cadeira.NumeroAluno.ToString() + " " + cadeira.NomeCadeira + " " + cadeira.NotaFinal);
+                        string[] nomtemp = cadeira.NomeCadeira.Split(' ', '\r', '\n');
+                        textBoxUc.AppendText(cadeira.NumeroAluno.ToString() + " " + Security.Decrypt(nomtemp[0]) + " " + cadeira.NotaFinal);
                         textBoxUc.AppendText(Environment.NewLine);
                     }
 
@@ -56,7 +56,9 @@ namespace ClientApplication.AdminArea
                     foreach (var cadeira in cadeiras)
                     {
 
-                        textBoxUc.AppendText(cadeira.NumeroAluno.ToString() + " " + cadeira.NomeCadeira + " " + cadeira.NotaFinal);
+
+                        string[] nomtemp = cadeira.NomeCadeira.Split(' ', '\r', '\n');
+                        textBoxUc.AppendText(cadeira.NumeroAluno.ToString() + " " + Security.Decrypt(nomtemp[0]) + " " + cadeira.NotaFinal);
                         textBoxUc.AppendText(Environment.NewLine);
                     }
 
@@ -70,7 +72,8 @@ namespace ClientApplication.AdminArea
                     foreach (var cadeira in cadeiras)
                     {
 
-                        textBoxUc.AppendText(cadeira.NumeroAluno.ToString() + " " + cadeira.NomeCadeira + " " + cadeira.NotaFinal);
+                        string[] nomtemp = cadeira.NomeCadeira.Split(' ', '\r', '\n');
+                        textBoxUc.AppendText(cadeira.NumeroAluno.ToString() + " " + Security.Decrypt(nomtemp[0]) + " " + cadeira.NotaFinal);
                         textBoxUc.AppendText(Environment.NewLine);
                     }
 
@@ -88,7 +91,9 @@ namespace ClientApplication.AdminArea
                     foreach (var cadeira in cadeiras)
                     {
 
-                        textBoxUc.AppendText(cadeira.NumeroAluno.ToString() + " " + cadeira.NomeCadeira + " " + cadeira.NotaFinal);
+
+                        string[] nomtemp = cadeira.NomeCadeira.Split(' ', '\r', '\n');
+                        textBoxUc.AppendText(cadeira.NumeroAluno.ToString() + " " + Security.Decrypt(nomtemp[0]) + " " + cadeira.NotaFinal);
                         textBoxUc.AppendText(Environment.NewLine);
                     }
 
@@ -101,7 +106,8 @@ namespace ClientApplication.AdminArea
                     foreach (var cadeira in cadeiras)
                     {
 
-                        textBoxUc.AppendText(cadeira.NumeroAluno.ToString() + " " + cadeira.NomeCadeira + " " + cadeira.NotaFinal);
+                        string[] nomtemp = cadeira.NomeCadeira.Split(' ', '\r', '\n');
+                        textBoxUc.AppendText(cadeira.NumeroAluno.ToString() + " " + Security.Decrypt(nomtemp[0]) + " " + cadeira.NotaFinal);
                         textBoxUc.AppendText(Environment.NewLine);
                     }
 
@@ -115,7 +121,8 @@ namespace ClientApplication.AdminArea
                     foreach (var cadeira in cadeiras)
                     {
 
-                        textBoxUc.AppendText(cadeira.NumeroAluno.ToString() + " " + cadeira.NomeCadeira + " " + cadeira.NotaFinal);
+                        string[] nomtemp = cadeira.NomeCadeira.Split(' ', '\r', '\n');
+                        textBoxUc.AppendText(cadeira.NumeroAluno.ToString() + " " + Security.Decrypt(nomtemp[0]) + " " + cadeira.NotaFinal);
                         textBoxUc.AppendText(Environment.NewLine);
                     }
 

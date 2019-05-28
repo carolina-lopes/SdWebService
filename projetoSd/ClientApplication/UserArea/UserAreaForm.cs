@@ -46,7 +46,8 @@ namespace ClientApplication
                             var x = user.getCadeiras(Int32.Parse(num));
                             foreach (var cadeira in x)
                             {
-                                descricao.AppendText(cadeira.NomeCadeira);
+                                string[] nomtemp = cadeira.NomeCadeira.Split(' ', '\r', '\n');
+                                descricao.AppendText(Security.Decrypt(nomtemp[0]));
                                 descricao.AppendText("\t");
                                 descricao.AppendText(cadeira.NotaFinal.ToString());
                                 descricao.AppendText(Environment.NewLine);
@@ -61,7 +62,8 @@ namespace ClientApplication
                             var x = user.getCadeirasM(Int32.Parse(num));
                             foreach (var cadeira in x)
                             {
-                                descricao.AppendText(cadeira.NomeCadeira);
+                                string[] nomtemp = cadeira.NomeCadeira.Split(' ', '\r', '\n');
+                                descricao.AppendText(Security.Decrypt(nomtemp[0]));
                                 descricao.AppendText("\t");
                                 descricao.AppendText(cadeira.NotaFinal.ToString());
                                 descricao.AppendText(Environment.NewLine);
@@ -75,7 +77,8 @@ namespace ClientApplication
                             var x = user.getCadeirasD(Int32.Parse(num));
                             foreach (var cadeira in x)
                             {
-                                descricao.AppendText(cadeira.NomeCadeira);
+                                string[] nomtemp = cadeira.NomeCadeira.Split(' ', '\r', '\n');
+                                descricao.AppendText(Security.Decrypt(nomtemp[0]));
                                 descricao.AppendText("\t");
                                 descricao.AppendText(cadeira.NotaFinal.ToString());
                                 descricao.AppendText(Environment.NewLine);
@@ -93,7 +96,8 @@ namespace ClientApplication
                             var x = user.getCadeiras(Int32.Parse(num));
                             foreach (var cadeira in x)
                             {
-                                descricao.AppendText(cadeira.NomeCadeira);
+                                string[] nomtemp = cadeira.NomeCadeira.Split(' ', '\r', '\n');
+                                descricao.AppendText(Security.Decrypt(nomtemp[0]));
                                 descricao.AppendText("\t");
                                 descricao.AppendText(cadeira.NotaFinal.ToString());
                                 descricao.AppendText(Environment.NewLine);
@@ -108,7 +112,8 @@ namespace ClientApplication
                             var x = user.getCadeirasM(Int32.Parse(num));
                             foreach (var cadeira in x)
                             {
-                                descricao.AppendText(cadeira.NomeCadeira);
+                                string[] nomtemp = cadeira.NomeCadeira.Split(' ', '\r', '\n');
+                                descricao.AppendText(Security.Decrypt(nomtemp[0]));
                                 descricao.AppendText("\t");
                                 descricao.AppendText(cadeira.NotaFinal.ToString());
                                 descricao.AppendText(Environment.NewLine);
@@ -122,7 +127,8 @@ namespace ClientApplication
                             var x = user.getCadeirasD(Int32.Parse(num));
                             foreach (var cadeira in x)
                             {
-                                descricao.AppendText(cadeira.NomeCadeira);
+                                string[] nomtemp = cadeira.NomeCadeira.Split(' ', '\r', '\n');
+                                descricao.AppendText(Security.Decrypt(nomtemp[0]));
                                 descricao.AppendText("\t");
                                 descricao.AppendText(cadeira.NotaFinal.ToString());
                                 descricao.AppendText(Environment.NewLine);

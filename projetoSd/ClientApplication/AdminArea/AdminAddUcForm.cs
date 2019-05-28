@@ -35,8 +35,8 @@ namespace ClientApplication.AdminArea
             {
                 try
                 {
-                    admin.addCadeiraL(nomeUc, numAluno, nota, numUc);
-                    adminback.addCadeiraL(nomeUc, numAluno, nota, numUc);
+                    admin.addCadeiraL(Security.Encrypt(nomeUc), numAluno, nota, numUc);
+                    adminback.addCadeiraL(Security.Encrypt(nomeUc), numAluno, nota, numUc);
                 }
                 catch (Exception)
                 {
@@ -53,8 +53,8 @@ namespace ClientApplication.AdminArea
             {
                 try
                 {
-                    admin.addCadeiraM(nomeUc, numAluno, nota, numUc);
-                    adminback.addCadeiraM(nomeUc, numAluno, nota, numUc);
+                    admin.addCadeiraM(Security.Encrypt(nomeUc), numAluno, nota, numUc);
+                    adminback.addCadeiraM(Security.Encrypt(nomeUc), numAluno, nota, numUc);
                 }
                 catch (Exception)
                 {
@@ -72,8 +72,8 @@ namespace ClientApplication.AdminArea
                 try
                 {
 
-                    admin.addCadeiraD(nomeUc, numAluno, nota, numUc);
-                    adminback.addCadeiraD(nomeUc, numAluno, nota, numUc);
+                    admin.addCadeiraD(Security.Encrypt(nomeUc), numAluno, nota, numUc);
+                    adminback.addCadeiraD(Security.Encrypt(nomeUc), numAluno, nota, numUc);
                 }
                 catch (Exception)
                 {
