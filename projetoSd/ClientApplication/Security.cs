@@ -10,7 +10,7 @@ namespace ClientApplication
 {
     public static class Security
     {
-        public static string Encrypt(string textToEncrypt)
+        public static string Encrypt(string textToEncrypt) //funcao de encriptacao com DES
         {
             try
             {
@@ -39,7 +39,7 @@ namespace ClientApplication
             }
         }
 
-        public static string Decrypt(string textToDecrypt)
+        public static string Decrypt(string textToDecrypt) //funcao de desencriptacao com DES
         {
             try
             {

@@ -28,7 +28,7 @@ namespace ClientApplication.AdminArea
 
             try
             {
-                AdminService1.AdminService admin = new AdminService1.AdminService();
+                AdminService1.AdminService admin = new AdminService1.AdminService();//conexao ao servidor principal
 
                 if (selected == "Licenciatura")
                 {
@@ -48,8 +48,8 @@ namespace ClientApplication.AdminArea
 
                     foreach (var cadeira in cadeiras)
                     {
-                        string[] nomtemp = cadeira.NomeCadeira.Split(' ', '\r', '\n');
-                        textBoxUc.AppendText(Security.Decrypt(nomtemp[0]) + " " + cadeira.NotaFinal);
+                        string[] nomtemp = cadeira.NomeCadeira.Split(' ', '\r', '\n'); // remocao de espacos, tabs e newlines para efetuar uma desencriptacao correta
+                        textBoxUc.AppendText(Security.Decrypt(nomtemp[0]) + " " + cadeira.NotaFinal);// adicao do nome da cadeira a text box com a desencriptacao feita
                         textBoxUc.AppendText(Environment.NewLine);
                     }
                 }
@@ -69,7 +69,7 @@ namespace ClientApplication.AdminArea
             catch (Exception)
             {
 
-                AdminServiceBackup.AdminServiceBackup admin = new AdminServiceBackup.AdminServiceBackup();
+                AdminServiceBackup.AdminServiceBackup admin = new AdminServiceBackup.AdminServiceBackup();// conexao ao servidor de backup caso o principal esteja ocupado
 
                 if (selected == "Licenciatura")
                 {

@@ -32,7 +32,7 @@ namespace ClientApplication.AdminArea
             textBoxUc.Clear();
             String selected = cb_grau.Text;
 
-            try
+            try // try para ver a disponibilidade de base de dados principal
             {
                 AdminService1.AdminService admin = new AdminService1.AdminService();
 
@@ -79,7 +79,7 @@ namespace ClientApplication.AdminArea
 
                 }
             }
-            catch (Exception)
+            catch (Exception) // se a base de dados principal nao esta disponivel vai buscar a informacao a de backup
             {
 
                 AdminServiceBackup.AdminServiceBackup admin = new AdminServiceBackup.AdminServiceBackup();

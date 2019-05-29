@@ -25,15 +25,15 @@ namespace ClientApplication.AdminArea
             String nome = textBoxNome.Text;
             int num = Int32.Parse(textBoxNum.Text);
             String selected = cb_grau.Text;
-            nome = ClientApplication.Security.Encrypt(nome);
+            nome = ClientApplication.Security.Encrypt(nome);//encriptacao do nome do aluno
             try
             {
                 AdminService1.AdminService admin = new AdminService1.AdminService();
                 AdminServiceBackup.AdminServiceBackup adminback = new AdminServiceBackup.AdminServiceBackup();
                 if (selected == "Licenciatura")
                 {
-                    admin.addAlunoL(nome, num);
-                    adminback.addAlunoL(nome, num);
+                    admin.addAlunoL(nome, num);//adicao do nome de aluno á base de dados principal
+                    adminback.addAlunoL(nome, num);//adiccao do nome a base de dados secundaria
                     textBoxNome.Clear();
                     textBoxNum.Clear();
                 }
@@ -55,7 +55,7 @@ namespace ClientApplication.AdminArea
                 }
 
             }
-            catch (Exception)
+            catch (Exception)// se alguma base de dados nao funcionar mensagem de erro 
             {
                 MessageBox.Show("Impossivel de adicionar");
             }

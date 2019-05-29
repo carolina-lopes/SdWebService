@@ -28,14 +28,14 @@ namespace ClientApplication.AdminArea
             int nota = Int32.Parse(textBoxNota.Text);
             String selected = cb_grau.Text;
 
-            AdminService1.AdminService admin = new AdminService1.AdminService();
-            AdminServiceBackup.AdminServiceBackup adminback = new AdminServiceBackup.AdminServiceBackup();
+            AdminService1.AdminService admin = new AdminService1.AdminService();//webservice do Servidor Principal
+            AdminServiceBackup.AdminServiceBackup adminback = new AdminServiceBackup.AdminServiceBackup();//Webservice do Servidor de Backup
 
             if(selected == "Licenciatura")
             {
                 try
                 {
-                    admin.addCadeiraL(Security.Encrypt(nomeUc), numAluno, nota, numUc);
+                    admin.addCadeiraL(Security.Encrypt(nomeUc), numAluno, nota, numUc);// encriptacao do nome de cadeira 
                     adminback.addCadeiraL(Security.Encrypt(nomeUc), numAluno, nota, numUc);
                 }
                 catch (Exception)

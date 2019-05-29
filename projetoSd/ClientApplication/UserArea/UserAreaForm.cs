@@ -39,14 +39,14 @@ namespace ClientApplication
 
                     try
                     {
-                        UserService.UserService user = new UserService.UserService();
+                        UserService.UserService user = new UserService.UserService();// ligacao a base de dados principal
 
                         if (grau == "Licenciatura")
                         {
                             var x = user.getCadeiras(Int32.Parse(num));
                             foreach (var cadeira in x)
                             {
-                                string[] nomtemp = cadeira.NomeCadeira.Split(' ', '\r', '\n');
+                                string[] nomtemp = cadeira.NomeCadeira.Split(' ', '\r', '\n');// eliminacao de espacos, tabs e newlines para uma bao desencriptacao
                                 descricao.AppendText(Security.Decrypt(nomtemp[0]));
                                 descricao.AppendText("\t");
                                 descricao.AppendText(cadeira.NotaFinal.ToString());
@@ -89,7 +89,7 @@ namespace ClientApplication
                     catch (Exception)
                     {
 
-                        UserServiceBackup.UserServiceBackup user = new UserServiceBackup.UserServiceBackup();
+                        UserServiceBackup.UserServiceBackup user = new UserServiceBackup.UserServiceBackup();// em caso de indisponibilidade a base de dados ira buscar informacao a base de dados secundaria
 
                         if (grau == "Licenciatura")
                         {
